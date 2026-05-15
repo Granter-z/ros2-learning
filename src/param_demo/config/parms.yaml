@@ -1,0 +1,3 @@
+param_node:
+  ros__parameters:
+    speed: 10.0
