@@ -1,10 +1,10 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from std_msgs.msg import String #导入所需模块
 class TopicNode1(Node):
     def __init__(self):
         super().__init__('topic_node1')
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
+        self.publisher_ = self.create_publisher(String, 'topic', 10) # 初始化ros2
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
